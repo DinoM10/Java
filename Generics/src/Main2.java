@@ -3,10 +3,10 @@ public class Main2 {
 
 	public static void main(String[] args) {
 
-		MyGenericClass<Integer> myInt = new MyGenericClass<>(1);
-		MyGenericClass<Double> myDouble = new MyGenericClass<>(3.14);
-		MyGenericClass<Character> myChar = new MyGenericClass<>('@');
-		MyGenericClass <String>myString = new MyGenericClass<>("Hello");
+		MyGenericClass<Integer,Integer> myInt = new MyGenericClass<>(1,2);
+		MyGenericClass<Double,Double> myDouble = new MyGenericClass<>(3.14,3.122);
+		MyGenericClass<Character, Character> myChar = new MyGenericClass<>('@','w');
+		MyGenericClass <String, String>myString = new MyGenericClass<>("Hello","nfos");
 
 			
 		System.out.println(myInt.getValue());

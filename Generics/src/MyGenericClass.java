@@ -1,15 +1,17 @@
 
-public class MyGenericClass <T> {
+public class MyGenericClass <T, V> {
 
 	T x;
+	V y;
 	
-	MyGenericClass(T x){
+	MyGenericClass(T x, V y){
 		
 		this.x = x;
+		this.y = y;
 	}
 	
-	public T getValue() {
+	public V getValue() {
 		
-		return x;
+		return y;
 	}
 }
